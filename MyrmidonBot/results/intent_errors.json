@@ -1,0 +1,18 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5126885771751404
+    }
+  },
+  {
+    "text": "okay",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9539915323257446
+    }
+  }
+]
