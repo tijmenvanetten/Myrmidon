@@ -22,9 +22,13 @@ LOCAL_BOTS = [
 
 EXTERNAL_BOTS = [
     {
+        'name': 'DiagnosisBot',
         'host': '127.0.0.1', 
-        'port': '5000', 
-        'username': 'admin', 
-        'password': 'admin'
+        'port': '5005', 
+    },
+    {
+        'name': 'AppointmentBot',
+        'host': '127.0.0.1', 
+        'port': '5006', 
     }
 ]

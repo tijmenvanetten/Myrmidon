@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Answer to cold symptoms
+  steps:
+    - intent: have_cold
+    - action: action_hello_world
