@@ -12,6 +12,9 @@ intents:
   - request_appointment
   - request_diagnosis
 
+slots:
+  location:
+    type: text
 
 responses:
   utter_greet:
