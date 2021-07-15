@@ -93,8 +93,22 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: have_cold
+- intent: request_diagnosis
   examples: |
     - I have a cold
     - I think I have a cold
     - might have a cold
+    - I feel sick
+    - I think I am sick
+    - I don't feel so good
+    - What is wrong with me
+
+- intent: request_appointment
+  examples: |
+    - I would like to make an appointment
+    - I want to see a doctor
+    - Do you have any space available?
+    - can I make an appointment?
+    - can I schedule an appointment?
+    - I want to schedule an appointment
+

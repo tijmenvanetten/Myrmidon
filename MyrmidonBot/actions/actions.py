@@ -16,18 +16,39 @@ from rasa_sdk.events import SlotSet
 import requests
 
 
-class ActivateDiagnosisBot(Action):
+class RequestDiagnosis(Action):
 
     def name(self) -> Text:
-        return "action_hello_world"
+        return "process_diagnosis"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        url = 'http://127.0.0.1:5008'
+        url = 'http://127.0.0.1:5006'
         response = requests.get(url).text
 
-        dispatcher.utter_message(response = "get_server_info", text = response)
+        response = "DiagnosisBot: " + response
+
+        dispatcher.utter_message(response = "give_diagnosis", text = response)
 
         return []
+
+class ScheduleAppointment(Action):
+
+    def name(self) -> Text:
+        return "process_appointment"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'http://127.0.0.1:5007'
+        response = requests.get(url).text
+
+        response = "AppointmentBot: " + response
+
+        dispatcher.utter_message(response = "give_appointment", text = response)
+
+        return []
+

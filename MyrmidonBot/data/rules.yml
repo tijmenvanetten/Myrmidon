@@ -12,7 +12,12 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Answer to cold symptoms
+- rule: Diagnosis
   steps:
-    - intent: have_cold
-    - action: action_hello_world
+    - intent: request_diagnosis
+    - action: process_diagnosis
+
+- rule: Scheduling
+  steps:
+    - intent: request_appointment
+    - action: process_appointment
