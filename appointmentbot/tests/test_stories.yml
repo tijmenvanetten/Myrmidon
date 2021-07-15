@@ -1,0 +1,32 @@
+#### Sample Story for booking appointments
+
+nlu:
+- intent: greet
+  examples: |
+	- Hey
+	- Hi
+	- Hey there
+	- Whats up
+	- Hello
+	- Good Morning
+
+- intent: information
+  examples: |
+	- I want to book an appointment
+	- What times are available?
+	- When can I see the doctor?
+	
+
+stories:
+- story: greet and information
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: information
+  - action: utter_inform
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet  
