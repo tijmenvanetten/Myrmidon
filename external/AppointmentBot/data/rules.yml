@@ -11,3 +11,13 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Request appointment
+  steps:
+  - intent: information
+  - action: utter_inform
+
+- rule: Set time for appointment
+  steps:
+  - intent: designate_time
+  - action: utter_confirm

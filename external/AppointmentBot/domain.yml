@@ -19,9 +19,6 @@ slots:
   timeslot:
     type: text
 
-actions:
-  - action_timeslot
-
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -46,10 +43,8 @@ responses:
   - text: "Sure. Please book an appointment with your doctor from the following time slots: 10AM, 11AM, 12PM, 1PM."
 
   utter_confirm:
-  - text: "Perfect. We have booked an appointment with dr. Chandrasekharan at {timeslot}. We will be video-calling you through WhatsApp at this number then."
+  - text: "Your appointment is set"
 
-  utter_repeat:
-  - text: "Your appointment is at {timeslot}"
 
 session_config:
   session_expiration_time: 60

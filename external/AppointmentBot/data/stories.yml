@@ -29,14 +29,4 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: informative
-  steps:
-  - intent: information
-  - action: utter_inform
 
-- story: book time
-  steps:
-  - intent: designate_time
-  - action: action_timeslot
-  - intent: repeat_appointment
-  - action: utter_repeat

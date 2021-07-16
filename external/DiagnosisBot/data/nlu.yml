@@ -91,13 +91,9 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: want_doctor
-  examples: |
-    - I would like to consult a doctor
-    - I need to talk to a doctor.
-
 - intent: explain_symptoms 
   examples: |
+    - I am sick
     - I have a headache
     - I have a stomachache 
     - My head hurts
