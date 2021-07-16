@@ -24,6 +24,7 @@ Instantiate the Hub bot by running the following commands
 
 ```bash
 cd MyrmidonBot/
+rasa run actions
 rasa shell
 ```
 
