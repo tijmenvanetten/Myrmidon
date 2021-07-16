@@ -28,4 +28,9 @@ rasa run
 ```
 
 ## How does it work?
+The MyrmidonBot works by fully leveraging the capabilities of the Rasa Open Source framework.
+
+By specifying custom actions that instantiate different models through their API when triggered, we channel the conversation through purpose-specifically trained chatbots.
+
+In this example, two external bots are connected to the main Hub called AppointmentBot and DiagnosisBot. As their names suggest, they are trained for the purpose of scheduling an appointment and helping to diagnose the patient respectively. 
 
