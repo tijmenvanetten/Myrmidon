@@ -23,8 +23,10 @@ Then, instantiate the Hub bot by running the following commands
 
 ```bash
 cd MyrmidonBot/
-rasa run
+rasa shell
 ```
+
+This will open an interactive shell that allows you to communicate with the MyrmidonBot. When the MyrmidonBot feels like you need to be connected to a different bot, it will take your messages from there and handle the connections with other servers to keep the conversation going. As a result, the user will have a seamless experience but still leveraging various different sources of chatbots.
 
 ## How does it work?
 The MyrmidonBot works by fully leveraging the capabilities of the Rasa Open Source framework.
