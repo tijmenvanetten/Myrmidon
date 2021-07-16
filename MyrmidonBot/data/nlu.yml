@@ -102,6 +102,20 @@ nlu:
     - I think I am sick
     - I don't feel so good
     - What is wrong with me
+    - I have a headache
+    - I have a stomachache 
+    - My head hurts
+    - My stomach hurts
+    - I have a fever
+    - My nose is running
+    - I have a cough
+    - I am coughing
+    - I have a rash
+    - My skin is dry
+    - Rashes on my elbows and knees
+    - I want to know more
+    - Tell me more
+    - Know more about this condition
 
 - intent: request_appointment
   examples: |
@@ -111,4 +125,18 @@ nlu:
     - can I make an appointment?
     - can I schedule an appointment?
     - I want to schedule an appointment
+    - Can I book an appointment?
+    - When can I see a doctor?
+    - I want to see the doctor
+    - Book an appointment
+    - I need the doctor
+    - When is the doctor available?
+    - 12PM
+    - 10AM
+    - 11AM
+    - 13PM
+    - 14PM
+    - When is my appointment?
+    - What time is my appointment?
+    - Repeat the time
 

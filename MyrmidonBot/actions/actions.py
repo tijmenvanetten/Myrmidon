@@ -17,7 +17,34 @@ import requests
 import json
 
 
-class RequestDiagnosis(Action):
+class AppointmentBotInterface(Action):
+
+    def name(self) -> Text:
+        return "process_appointment"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'http://127.0.0.1:5006/webhooks/rest/webhook'
+
+        context = {  
+            "sender": "test_user",  
+            "message": tracker.current_state()['latest_message']['text']
+        }
+
+        try:
+            response = requests.post(url, data=json.dumps(context))
+            response.raise_for_status()
+            response = "AppointmentBot: " + json.loads(response.text)[0]['text']
+        except:
+            response = "AppointmentBot is offline"
+
+        dispatcher.utter_message(response = "give_appointment", text = response)
+
+        return []
+
+class DiagnosisBotInterface(Action):
 
     def name(self) -> Text:
         return "process_diagnosis"
@@ -28,38 +55,19 @@ class RequestDiagnosis(Action):
 
         context = {  
             "sender": "test_user",  
-            "message": tracker.current_state()['latest_message'],
+            "message": tracker.current_state()['latest_message']['text'],
         }
-
-        url = 'http://127.0.0.1:5006/webhooks/rest/webhook'
-
-        response = requests.post(url, data=json.dumps(context)).text
-        response = "DiagnosisBot: " + response
-
-        dispatcher.utter_message(response = "give_diagnosis", text = response)
-
-        return []
-
-class ScheduleAppointment(Action):
-
-    def name(self) -> Text:
-        return "process_appointment"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         url = 'http://127.0.0.1:5007/webhooks/rest/webhook'
 
-        context = {  
-            "sender": "test_user",  
-            "message": tracker.current_state()['latest_message']
-        }
+        try:
+            response = requests.post(url, data=json.dumps(context))
+            response.raise_for_status()
+            response = "DiagnosisBot: " + json.loads(response.text)[0]['text']
+        except:
+            response = "DiagnosisBot is offline"
 
-        response = requests.post(url, data=json.dumps(context)).text
-        response = "AppointmentBot: " + response
-
-        dispatcher.utter_message(response = "give_appointment", text = response)
+        dispatcher.utter_message(response = "give_diagnosis", text = response)
 
         return []
 
