@@ -15,16 +15,15 @@ SANIC_HOST='127.0.0.1:5505'
 DEBUG = True
 
 # Application definition
-
 INSTALLED_BOTSs = [
     {
         'name': 'DiagnosisBot',
         'host': '127.0.0.1', 
-        'port': '5005', 
+        'port': '5006', 
     },
     {
         'name': 'AppointmentBot',
         'host': '127.0.0.1', 
-        'port': '5006', 
+        'port': '5007', 
     }
 ]
