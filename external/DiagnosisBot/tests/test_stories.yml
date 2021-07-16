@@ -112,5 +112,15 @@ stories:
 - story: eczema
   steps:
   - user: |
+      I want the doctor
+    intent: want_doctor 
+  - action: utter_ask_for_symptoms 
+  - user: |
       I have a rash
+    intent: explain_eczema_symptoms
+  - action: utter_diagnose_eczema
+  - user: |
+      Tell me more
+    intent: explain_more
+  - action: utter_explain_more
 
