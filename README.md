@@ -34,7 +34,9 @@ By specifying custom actions that instantiate different models through their API
 
 In this example, two external bots are connected to the main Hub called AppointmentBot and DiagnosisBot. As their names suggest, they are trained for the purpose of scheduling an appointment and helping to diagnose the patient respectively. 
 
-### Myrmidon Team Members:
+### Examples
+
+## Myrmidon Team Members:
   * Philippos Giavridis
   * Vitor Aronis
   * Gabriela Do Prado
