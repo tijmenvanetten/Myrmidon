@@ -53,7 +53,7 @@ I want to consult a doctor.
 --> Sure. Please book an appointment with your doctor from the following time slots: 10AM, 11AM, 12PM, 1PM.  
 1PM
 
---> Perfect. We have booked an appointment with Dr Tijmen at 1PM.  
+--> Perfect. We have booked an appointment with dr. Chandrasekharan, at 1PM.  
 ```
 ## Myrmidon Team Members:
   * Philippos Giavridis
