@@ -37,6 +37,6 @@ stories:
 - story: book time
   steps:
   - intent: designate_time
-  - slot_was_set:
-    - timeslot
   - action: action_timeslot
+  - intent: repeat_appointment
+  - action: utter_repeat

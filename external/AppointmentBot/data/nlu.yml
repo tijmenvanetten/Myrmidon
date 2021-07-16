@@ -116,3 +116,8 @@ nlu:
     - 13PM
     - 14PM
 
+- intent: repeat_appointment
+  examples: |
+    - When is my appointment?
+    - What time is my appointment?
+    - Repeat the time
