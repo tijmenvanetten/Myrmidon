@@ -22,9 +22,9 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 	
-	timeslot = tracker.get_slot("timeslot")
-	message = "Perfect. We have booked an appointment with Dr Tijmen at {}. We will be video-calling you through WhatsApp at this number then.".format(timeslot)
-	print(message)
+        timeslot = tracker.get_slot("timeslot")
+        message = "Perfect. We have booked an appointment with Dr Tijmen at {}. We will be video-calling you through WhatsApp at this number then.".format(timeslot)
+        print(message)
         dispatcher.utter_message(text=message)
 
         return []
