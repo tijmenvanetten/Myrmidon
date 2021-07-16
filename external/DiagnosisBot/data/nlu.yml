@@ -91,6 +91,11 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
+- intent: want_doctor
+  examples: |
+    - I would like to consult a doctor
+    - I need to talk to a doctor.
+
 - intent: explain_symptoms 
   examples: |
     - I have a headache
@@ -101,3 +106,16 @@ nlu:
     - My nose is running
     - I have a cough
     - I am coughing
+
+- intent: explain_eczema_symptoms 
+  examples: |
+    - I have a rash
+    - My skin is dry
+    - Rashes on my elbows and knees
+
+- intent: explain_more
+  examples: |
+    - I want to know more
+    - Tell me more
+    - Know more about this condition
+

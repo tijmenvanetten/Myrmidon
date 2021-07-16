@@ -109,3 +109,8 @@ stories:
     intent: explain_symptoms
   - action: utter_diagnose_other
 
+- story: eczema
+  steps:
+  - user: |
+      I have a rash
+

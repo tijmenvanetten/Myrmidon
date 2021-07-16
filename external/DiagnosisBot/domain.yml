@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - explain_symptoms
+  - want_doctor
 
 responses:
   utter_greet:
@@ -35,6 +36,15 @@ responses:
 
   utter_diagnose_other:
   - text: "You have the common cold."
+
+  utter_diagnose_eczema:
+  - text: "Thank you for the response. Upon initial diagnosis, we think that you may have a case of mild eczema. Would you like to know more about this condition or consult a doctor?"
+
+  utter_ask_for_symptoms:
+  - text: "I understand that you want to consult a doctor. Could you please share more details on the symptoms that you are currently experiencing?"
+
+  utter_explain_more:
+  - text: "Eczema is a condition wherein patches of skin become inflamed, itchy, cracked, and rough. Some types can also cause blisters."
 
 session_config:
   session_expiration_time: 60

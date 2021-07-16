@@ -31,7 +31,18 @@ stories:
 
 - story: asses symptoms
   steps:
-  - intent: explain_symptoms
-  - action: utter_diagnose_fever
+  - intent: want_doctor
+  - action: utter_ask_for_symptoms
   - intent: explain_symptoms
   - action: utter_diagnose_other
+  - intent: explain_symptoms
+  - action: utter_diagnose_other
+
+- story: assess eczema
+  steps:
+  - intent: want_doctor
+  - action: utter_ask_for_symptoms
+  - intent: explain_eczem_symptoms
+  - action: utter_diagnose_eczema
+  - intent: explain_more
+  - action: utter_explain_more
