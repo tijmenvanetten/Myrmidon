@@ -37,22 +37,22 @@ In this example, two external bots are connected to the main Hub called Appointm
 
 ### Examples
 ```code
--->Hi, how can I help you today?  
+--> Hi, how can I help you today?  
 I have some symptoms and would like to analyse them.
 
--->Could you share some details about the symptoms you are currently experiencing?  
+--> Could you share some details about the symptoms you are currently experiencing?  
 My skin is dry and I have a rash on my elbows. 
 
--->Upon initial diagnosis, it seems like you might have a case of mild eczema. Would you like to know more about this condition or consult a doctor?  
+--> Upon initial diagnosis, it seems like you might have a case of mild eczema. Would you like to know more about this condition or consult a doctor?  
 Tell me more.
 
--->Eczema is a condition wherein patches of skin become inflamed, itchy, cracked, and rough. Some types can also cause blisters.   
+--> Eczema is a condition wherein patches of skin become inflamed, itchy, cracked, and rough. Some types can also cause blisters.   
 I want to consult a doctor.
 
--->Sure. Please book an appointment with your doctor from the following time slots: 10AM, 11AM, 12PM, 1PM.  
+--> Sure. Please book an appointment with your doctor from the following time slots: 10AM, 11AM, 12PM, 1PM.  
 1PM
 
--->Perfect. We have booked an appointment with Dr Tijmen at 1PM.  
+--> Perfect. We have booked an appointment with Dr Tijmen at 1PM.  
 ```
 ## Myrmidon Team Members:
   * Philippos Giavridis
