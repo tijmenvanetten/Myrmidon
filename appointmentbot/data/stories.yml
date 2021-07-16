@@ -34,3 +34,9 @@ stories:
   - intent: information
   - action: utter_inform
 
+- story: book time
+  steps:
+  - intent: designate_time
+  - slot_was_set:
+    - timeslot
+  - action: action_timeslot

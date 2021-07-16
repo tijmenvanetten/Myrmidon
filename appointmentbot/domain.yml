@@ -9,6 +9,17 @@ intents:
   - mood_unhappy
   - bot_challenge
   - information
+  - designate_time
+
+entities:
+  - timeslot
+
+slots:
+  timeslot:
+    type: text
+
+actions:
+  - action_timeslot
 
 responses:
   utter_greet:
@@ -31,7 +42,10 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_inform:
-  - text: "There is a timeslot available tomorrow between 12:00 and 18:00!"
+  - text: "Sure. Please book an appointment with your doctor from the following time slots: 10AM, 11AM, 12PM, 1PM."
+
+  utter_confirm:
+  - text: "Perfect. We have booked an appointment with Dr Tijmen at {timeslot}. We will be video-calling you through WhatsApp at this number then."
 
 session_config:
   session_expiration_time: 60

@@ -1,6 +1,14 @@
 version: "2.0"
 
 nlu:
+- synonym: timeslot
+  examples: |
+    - 10AM
+    - 11AM
+    - 12PM
+    - 13PM
+    - 14PM
+
 - intent: greet
   examples: |
     - hey
@@ -99,3 +107,12 @@ nlu:
     - Book an appointment
     - I need the doctor
     - When is the doctor available?
+
+- intent: designate_time
+  examples: |
+    - 12pm
+    - 10am
+    - 11am
+    - 13pm
+    - 14pm
+
