@@ -19,7 +19,7 @@ Instantiate locally installed bots by running
 python external/run.py
 ```
 
-Then, instantiate the Hub bot by running the following commands
+Instantiate the Hub bot by running the following commands
 
 ```bash
 cd MyrmidonBot/
