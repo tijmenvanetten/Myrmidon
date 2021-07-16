@@ -4,7 +4,7 @@
 
 The Myrmidon Bot product designed for the InStepHacks 2021 Hackathon!
 
-## Installation
+## Installation and Running
 Create a virtual environment and install the depencies listed in the requirements.txt file as follows:
 
 ```bash
@@ -13,7 +13,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Running
 Instantiate locally installed bots by running 
 
 ```python 
