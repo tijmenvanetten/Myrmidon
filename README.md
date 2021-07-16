@@ -2,7 +2,7 @@
 
 # Myrmidon
 
-The Myrmidon Bot product designed for the InStepHacks 2021 Hackathon!
+Introducing Myrmidon! A modular approach to combining healthcare chatbot services to provide a seemless experience to the patient. Our submission to the Infosys InStepHacks2021 Hackathon.
 
 ## Installation and Running
 Create a virtual environment and install the depencies listed in the requirements.txt file as follows:
