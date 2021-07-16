@@ -36,7 +36,8 @@ By specifying custom actions that instantiate different models through their API
 In this example, two external bots are connected to the main Hub called AppointmentBot and DiagnosisBot. As their names suggest, they are trained for the purpose of scheduling an appointment and helping to diagnose the patient respectively. 
 
 ### Examples
--->* Hi, how can I help you today?*  
+```code
+-->*Hi, how can I help you today?*  
 I have some symptoms and would like to analyse them.
 
 -->*Could you share some details about the symptoms you are currently experiencing?*  
@@ -52,7 +53,7 @@ I want to consult a doctor.
 1PM
 
 -->*Perfect. We have booked an appointment with Dr Tijmen at 1PM.*
-
+```
 ## Myrmidon Team Members:
   * Philippos Giavridis
   * Vitor Aronis
