@@ -42,7 +42,7 @@ stories:
   steps:
   - intent: want_doctor
   - action: utter_ask_for_symptoms
-  - intent: explain_eczem_symptoms
+  - intent: explain_eczema_symptoms
   - action: utter_diagnose_eczema
   - intent: explain_more
   - action: utter_explain_more
