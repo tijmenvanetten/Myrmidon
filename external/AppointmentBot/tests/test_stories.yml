@@ -24,6 +24,8 @@ stories:
   - action: utter_greet
   - intent: information
   - action: utter_inform
+  - intent: designate_time
+  - action: utter_confirm
 
 rules:
 - rule: Greet user
