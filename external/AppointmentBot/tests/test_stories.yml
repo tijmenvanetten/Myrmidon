@@ -27,6 +27,17 @@ stories:
   - intent: designate_time
   - action: utter_confirm
 
+- story: information and repeat
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: information
+  - action: utter_inform
+  - intent: designate_time
+  - action: utter_confirm
+  - intent: repeat_appointment
+  - action: utter_repeat
+
 rules:
 - rule: Greet user
   steps:
